@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'
+import { Analytics } from "@vercel/analytics/react"
 
 import Header from '@/components/Header';
 
@@ -23,6 +24,7 @@ export default function Home() {
 
 
       <div className="px-6">
+        <Analytics />
         <Header />
         {/* Main Box */}
         <div className="mx-auto my-30 w-full max-w-3xl bg-white border-3 border-black rounded-2xl shadow p-8 text-center ">
