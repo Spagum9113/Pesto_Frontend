@@ -7,7 +7,7 @@ const MOCK = [
     { id: 3, name: 'Cara', title: 'Full-Stack Ace', avatar: '/fakepic1.png' },
 ];
 
-export async function GET(_request: Request) {
+export async function GET() {
     // we could read the query but for now just return all
     return NextResponse.json(MOCK);
 }
