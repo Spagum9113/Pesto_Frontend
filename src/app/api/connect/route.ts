@@ -56,7 +56,7 @@ export async function GET(request: Request) {
         <p>— The Pesto Team</p>
       `,
         })
-    } catch (mailErr) {
+    } catch {
         return NextResponse.json({ error: 'Failed to send email' }, { status: 500 })
     }
 

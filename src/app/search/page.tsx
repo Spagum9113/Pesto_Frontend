@@ -5,6 +5,7 @@
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
+import Image from 'next/image'
 
 interface Profile {
     id: number;
@@ -56,7 +57,7 @@ export default function SearchResults() {
                                 key={p.id}
                                 className="flex items-center space-x-4 bg-gray-100 p-4 rounded"
                             >
-                                <img
+                                <Image
                                     src={p.avatar}
                                     alt={p.name}
                                     className="w-12 h-12 rounded-full"
