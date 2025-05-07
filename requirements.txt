@@ -1,0 +1,6 @@
+# Example Python dependencies:
+# fastapi==0.95.1
+# uvicorn==0.23.1
+# python-dotenv==1.0.0
+
+# (later if any)
